@@ -8,3 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     });
   });  
+
+  function showMessage() {
+    document.getElementById('message').innerText = 'You found me 🥚!';
+  }

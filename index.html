@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Your Name - Personal Website</title>
+    <title>Rachel Yan's Website</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
@@ -15,7 +15,7 @@
   <!-- Header -->
   <header>
     <nav>
-      <h1>Ray/Rachel Yan</h1>
+      <h1>Rachel Yan</h1>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#resume">Resume</a></li>
@@ -23,22 +23,48 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Prociono&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jua&family=Prociono&display=swap');
+
+      #resume .container {
+      display: flex;               /* Use flexbox */
+      flex-direction: column;      /* Arrange items in a column */
+      align-items: center;         /* Center items horizontally */
+      text-align: center;          /* Center text and inline elements */
+      }
+      .btn {
+      margin-top: 10px;           /* Optional: adds space above the button */
+      padding: 10px 20px;         /* Optional: adds padding to the button */
+      background-color: #007BFF;  /* Example button background color */
+      color: white;                /* Example button text color */
+      text-decoration: none;       /* Remove underline from link */
+      border-radius: 5px;         /* Optional: add rounded corners to the button */
+      }
+      .btn:hover {
+      background-color: #0056b3;  /* Darker shade on hover */
+      }
+    </style>
   </header>
 
   <!-- About Section -->
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>Hey there, you've found my website! I'm Rachel or Ray (either works), a Dean's List student at Northeastern studying CS & Music, and I love finding the intersections between tech and art, whether that comes in the form of video games, AR/VR experiences, audio hardware, or performance technology. Feel free to reach out to hear about my projects, experiences, or personal take on the Legend of Zelda timeline split after Ocarina of Time. Take your time exploring this website -- I didn't make it for nothing.</p>
-    </div>
+      <p style="font-family: 'Jua'; font-size: 20px; max-width: 1000px; margin: 0 auto;">
+        Hey there, you've found my website! I'm Rachel or Ray (either works), a Dean's List student at Northeastern studying CS & Music, and I love finding the intersections between tech and art, whether that comes in the form of video games, AR/VR experiences, audio hardware, or performance technology. Feel free to take your time exploring my projects and this website -- I may have hidden an easter egg somewhere.
+    </p>
+        </div>
   </section>
+
 
   <!-- Resume Section -->
   <section id="resume">
     <div class="container">
       <h2>Resume</h2>
-      <p>You can download my resume by clicking the link below:</p>
-      <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+      <p style="font-family: 'Jua'; font-size: 20px;">You can download my resume by clicking the button below:</p>
+      <a href="assets\Rachel Yan CI Game Resume OUTLOOK EMAIL.docx" target="_blank" class="btn">Download Resume</a>
     </div>
   </section>
 
@@ -48,14 +74,15 @@
       <h2>Portfolio</h2>
       <div class="projects">
         <div class="project">
-          <h3>Project 1</h3>
-          <p>Description of your project. You can link to it below:</p>
-          <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+          <h3>Rebeat</h3>
+          <p style="font-family: 'Jua'; font-size: 20px; margin-bottom: 65px;">A 3D combat-based game in which they don't forget you, Player. Code, music, and visuals done entirely by me.</p>
+          <div id="message" style="font-family: 'Jua'; font-size: 20px; margin-top: 10px;"></div>
+          <a href="https://github.com/yourusername/project1" target="_blank" onclick="showMessage();">View Project</a>
         </div>
         <div class="project">
-          <h3>Project 2</h3>
-          <p>Description of your project. You can link to it below:</p>
-          <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+          <h3>Sugar Sprint</h3>
+          <p style="font-family: 'Jua'; font-size: 20px;">A 2D candy themed rhythm game centering around a skater girl and her sweet dog. Collaborated on the original soundtrack with a team of 6 other musicians.</p>
+          <a href="https://kblizzz.itch.io/sugar-sprint" target="_blank">View Project on Itch</a>
         </div>
         <!-- Add more projects as needed -->
       </div>
@@ -66,7 +93,7 @@
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Feel free to reach out to me via the following platforms:</p>
+      <p style="font-family: 'Jua'; font-size: 20px;">Feel free to reach out to me via the following platforms:</p>
       <ul>
         <li><a href="mailto:yan-ray@outlook.com">Email</a></li>
         <li><a href="https://github.com/rachelyan13" target="_blank">GitHub</a></li>
@@ -79,6 +106,7 @@
   <footer>
     <p>© 2024 R. Yan. All Rights Reserved.</p>
   </footer>
+
 
   <script src="script.js"></script>
 </body>
