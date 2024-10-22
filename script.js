@@ -21,5 +21,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     // Open the link after a short delay
     setTimeout(function() {
         window.open(url, '_blank'); // Open the link in a new tab
-    }, 1000); // Adjust delay (in milliseconds) as needed
+    }, 500); // Adjust delay (in milliseconds) as needed
   }
