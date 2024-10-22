@@ -23,6 +23,16 @@
   font-style: normal;
 }
 
+/* Add this style for circular image */
+.circular-img {
+  height: 50px; /* Set height */
+    width: 50px; /* Set width equal to height for a circle */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Space between the image and text */
+    vertical-align: middle; /* Align with text */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
 body {
   font-family: 'Jersey 10', cursive; 
   line-height: 1.6;
