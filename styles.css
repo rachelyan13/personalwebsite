@@ -41,6 +41,35 @@ body {
   font-size: 30px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to start */
+  }
+
+  .projects {
+    flex-direction: column; /* Stack project items */
+  }
+
+  .project {
+    flex: 1 1 100%; /* Full width for projects on small screens */
+      margin-bottom: 20px; /* Space between projects */
+    }
+      
+  h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+      
+  h2 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+  }
+
 h1, h2 {
   text-align: center;
   margin-bottom: 20px;
