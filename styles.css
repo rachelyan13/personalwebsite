@@ -48,15 +48,18 @@ body {
     align-items: flex-start; /* Align items to start */
   }
 
+  /*
   .projects {
-    flex-direction: column; /* Stack project items */
+    flex-direction: column;
   }
-
+  
+  
   .project {
-    flex: 1 1 100%; /* Full width for projects on small screens */
-      margin-bottom: 20px; /* Space between projects */
+    flex: 1 1 100%; 
+      margin-bottom: 20px; 
     }
-      
+  */  
+
   h1 {
     font-size: 24px; /* Adjust font size for smaller screens */
   }
