@@ -139,8 +139,9 @@
         <h2>Contact</h2>
         <p>Feel free to reach out through the following platforms:</p>
         <ul>
+            <!-- Added id="github-link" to attach event listener -->
             <li><a href="mailto:yan.ra@northeastern.edu">Email</a></li>
-            <li><a href="https://github.com/y-ra" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/y-ra" target="_blank" id="github-link">GitHub</a></li>
             <li><a href="https://linkedin.com/in/yan-rae" target="_blank">LinkedIn</a></li>
         </ul>
     </section>
@@ -149,6 +150,10 @@
     <footer>
         <p>© 2024 R. Yan. All Rights Reserved.</p>
     </footer>
+    
+    <!-- Hidden message container -->
+    <div id="message" style="display:none; position: fixed; bottom: 20px; right: 20px; background: #222; color: #fff; padding: 10px; border-radius: 5px;">
+    </div>
 
     <script>
         // Animate sections on scroll
@@ -177,5 +182,6 @@
             navLinks.classList.toggle('show-nav');
         });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
