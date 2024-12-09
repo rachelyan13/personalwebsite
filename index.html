@@ -1,166 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <title>Rae Yan's Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Revalia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  </head>
-  
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700;900&family=Jua&family=Roboto:wght@300;400;700&family=Revalia&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <h1 style="font-family: 'Lexend';">
-        Rae Yan
-        <img src="assets\IMG_1680.JPG" alt="This is me!" style="height: 100px; width: auto; margin-left: 20px; vertical-align: middle;" class="circular-img">
-      </h1>
-      <ul>
-        <li><a href="#about" style="font-family: 'Lexend';">About</a></li>
-        <li><a href="#resume" style="font-family: 'Lexend';">Resume</a></li>
-        <li><a href="#portfolio" style="font-family: 'Lexend';">Portfolio</a></li>
-        <li><a href="#contact" style="font-family: 'Lexend';">Contact</a></li>
-      </ul>
-    </nav>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Prociono&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jua&family=Prociono&display=swap');
-
-      #resume .container {
-      display: flex;               /* Use flexbox */
-      flex-direction: column;      /* Arrange items in a column */
-      align-items: center;         /* Center items horizontally */
-      text-align: center;          /* Center text and inline elements */
-      }
-      .btn {
-      margin-top: 10px;           /* Optional: adds space above the button */
-      padding: 10px 20px;         /* Optional: adds padding to the button */
-      background-color: #007BFF;  /* Example button background color */
-      color: white;                /* Example button text color */
-      text-decoration: none;       /* Remove underline from link */
-      border-radius: 5px;         /* Optional: add rounded corners to the button */
-      }
-      .btn:hover {
-      background-color: #0056b3;  /* Darker shade on hover */
-      }
-    </style>
-  </header>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2 style="font-family: 'Lexend';">About Me</h2>
-      <p style="font-family: 'Jua'; font-size: 20px; max-width: 1000px; margin: 0 auto;">
-        Hey there, you've found my website! I'm Rae, a Dean's List student at Northeastern studying CS & Music, 
-        and I love finding the intersections between tech and art, whether that comes in the form of video games, AR/VR experiences, 
-        audio hardware, or performance technology. I have experience with software development, video game programming, music design,
-        and more, all of which can be found on this site. Please don't hesitate to reach out with any inquiries regarding my projects 
-        and/or experience. Feel free to take your time exploring my projects and this website -- I may have hidden an easter egg 
-        somewhere.
-    </p>
-    <p style="font-family: 'Jua'; font-size: 20px; max-width: 1000px; margin: 0 auto;"> 
-      Fun Fact: I have perfect pitch, so if you meet me, you can try testing me. I love guessing notes and chords correctly.
-    </p>
-        </div>
-  </section>
-
-
-  <!-- Resume Section -->
-  <section id="resume">
-    <div class="container">
-      <h2 style="font-family: 'Lexend';">Resume</h2>
-      <p style="font-family: 'Jua'; font-size: 20px;">You can download my resume by clicking the button below:</p>
-      <a href="assets\RAE YAN CI Resume nu_e NOloc ws.pdf" target="_blank" class="btn">Download Resume</a>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
-  </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <div class="container">
-      <h2 style="font-family: 'Lexend';">Portfolio</h2>
-      <div class="projects">
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Rae Yan</h1>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="project">
-          <h3 style="font-family: 'Lexend'; font-size: 50px;">OpenBnB</h3>
-          <p style="font-family: 'Jua'; font-size: 20px; margin-bottom: 65px;">
-            OpenBnB is a web platform connecting evacuees displaced by natural disasters with hosts offering temporary housing. 
-            Unlike traditional evacuation shelters, where being surrounded by other stressed and displaced people can compound 
-            psychological strain, OpenBNB provides a calmer, more personal environment for evacuees. By enabling people to list 
-            their homes as safe havens or find shelter in times of crisis, OpenBNB fosters a community-driven approach to compassionate 
-            and accessible housing when it’s needed most.
-          </p>
-          <div id="message" style="font-family: 'Jua'; font-size: 20px; margin-top: 10px;"></div>
-          <a href="https://open-bnb.vercel.app/" target="_blank" onclick="showMessage(event);">Visit OpenBnB</a>
+    <!-- Hero/Intro Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="assets/IMG_1680.JPG" alt="Rae Yan" class="hero-image" />
+            <h2>Hello, I'm Rae.</h2>
+            <p>Computer Scientist & Music Designer specializing in the intersection of technology and art</p>
         </div>
+    </section>
 
-        <div class="project">
-          <h3 style="font-family: 'Lexend'; font-size: 50px;">Urban Refuge Map</h3>
-          <p style="font-family: 'Jua'; font-size: 20px; margin-bottom: 94px;">
-            Our team implemented GIS (geographic information system) in a map that can integrate with the existing website of 
-            Urban Refuge (an organization that aims to assist refugees with finding help and resources in their area; urbanrefuge.org). 
-            The map features points on it representing resources that can be clicked to display information about them, such as 
-            resource details, transportation, address, times (if applicable), contact information, and more.
-          </p>
-          <div id="message" style="font-family: 'Jua'; font-size: 20px; margin-top: 10px;"></div>
-          <a href="https://urban-refugee.vercel.app/" target="_blank" onclick="showMessage(event);">Visit the Urban Refuge map</a>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            If your name is Toby Fox, creator of Undertale, click the "Contact" button immediately and send me an email. <br><br>
+            Otherwise — Hello! My name is Rae. I am an Honors Dean's List student at Northeastern majoring in Combined 
+            Computer Science & Music with a Concentration in Music Technology & Minor in Mechanical Engineering. <br><br>
+            I love exploring where software, music, and engineering intersect, especially in the realm of video games, from game 
+            programming, to soundtrack composition, to AR/VR immersion, to audio hardware, to performance technology, to asset modeling, 
+            to more. Games changed my life as a child for better, and I want to pay it forward with my career. <br><br>
+            I am experienced with software development, game programming, music design, and more, all showcased on this website.
+            Currently, I am searching for co-op and/or internship positions for Spring & Summer 2025, so please feel free to reach out about anything, 
+            and take your time exploring the website — you might find a hidden easter egg! <br><br>
+            Fun Fact: I have perfect pitch! Test me if we meet — I love guessing notes and chords.
+        </p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume by clicking the button below:</p>
+            <a href="assets/RAE YAN CI Resume nu_e NOloc ws.pdf" target="_blank" class="btn">Download Resume</a>
         </div>
+    </section>
 
-        <div class="project">
-          <h3 style="font-family: 'Lexend'; font-size: 40px;">LightEmAll</h3>
-          <p style="font-family: 'Jua'; font-size: 20px; margin-bottom: 65px;">A game that implements Kruskal's algorithm & breadth-first search in which the player must connect all tiles with pipes to light up the entire game board.</p>
-          <div id="message" style="font-family: 'Jua'; font-size: 20px; margin-top: 10px;"></div>
-          <a href="https://rachelyan.itch.io/lightemall" target="_blank" onclick="showMessage(event);">View & Download Game on Itch</a>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>OpenBnB</h3>
+                <p>
+                    OpenBnB connects evacuees displaced by natural disasters with hosts offering temporary housing,
+                    providing a calmer, personal environment in times of crisis.
+                </p>
+                <a href="https://open-bnb.vercel.app/" target="_blank">Visit OpenBnB</a>
+            </div>
+
+            <div class="project">
+                <h3>Urban Refuge Map</h3>
+                <p>
+                    A GIS-integrated map for Urban Refuge that displays resources for refugees with location info,
+                    transportation details, and more.
+                </p>
+                <a href="https://urban-refugee.vercel.app/" target="_blank">Visit the Urban Refuge map</a>
+            </div>
+
+            <div class="project">
+                <h3>LightEmAll</h3>
+                <p>
+                    A puzzle game implementing Kruskal's and BFS algorithms. Connect all tiles with pipes to light
+                    up the entire board.
+                </p>
+                <a href="https://rachelyan.itch.io/lightemall" target="_blank">View on Itch</a>
+            </div>
+
+            <div class="project">
+                <h3>Sugar Sprint</h3>
+                <p>
+                    A 2D candy-themed rhythm game centered on a skater girl and her sweet dog. I collaborated on the
+                    original soundtrack with a team of talented musicians.
+                </p>
+                <a href="https://kblizzz.itch.io/sugar-sprint" target="_blank">View on Itch</a>
+            </div>
+
+            <div class="project">
+                <h3>Garment Genie</h3>
+                <p>
+                    A Chrome extension recommending cheaper, sustainable clothing alternatives from thredUp for Shein shoppers.
+                    Under review for the Chrome Web Store, but available via a downloadable .zip.
+                </p>
+                <a href="https://drive.google.com/file/d/1cp5nTUNM6dDffnbAz1ivQgUGGHUqFFCW/view?usp=drive_link" target="_blank">Download .zip</a>
+            </div>
+
+            <div class="project">
+                <h3>Rebeat</h3>
+                <p>
+                    A 2D combat game with a persistent memory of the player. WIP — launcher and files on Itch, along with a changelog of fixes.
+                </p>
+                <a href="https://rachelyan.itch.io/rebeat" target="_blank">View on Itch</a>
+            </div>
         </div>
+    </section>
 
-        <div class="project">
-          <h3 style="font-family: 'Lexend'; font-size: 50px;">Sugar Sprint</h3>
-          <p style="font-family: 'Jua'; font-size: 20px; margin-bottom: 65px;">A 2D candy themed rhythm game centering around a skater girl and her sweet dog. Collaborated on the original soundtrack with a team of 6 other musicians.</p>
-          <a href="https://kblizzz.itch.io/sugar-sprint" target="_blank">View & Download Game on Itch</a>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out through the following platforms:</p>
+        <ul>
+            <li><a href="mailto:yan.ra@northeastern.edu">Email</a></li>
+            <li><a href="https://github.com/y-ra" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/yan-rae" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
 
-        <div class="project">
-          <h3 style="font-family: 'Lexend'; font-size: 50px;">Garment Genie</h3>
-          <p style="font-family: 'Jua'; font-size: 20px;">A browser extension that recommends cheaper & sustainable clothing alternatives from thredUp for Shein shoppers (Google Chrome only). COMING SOON TO THE CHROME WEB STORE -- Garment Genie is currently under review to be published in the webstore; if you would like to try the extension for yourself before it's out, you can download it at the Google Drive link below to load it unpacked in Chrome local extensions.
-          </p>
-          <div id="message" style="font-family: 'Jua'; font-size: 20px; margin-top: 10px;"></div>
-          <a href="https://drive.google.com/file/d/1cp5nTUNM6dDffnbAz1ivQgUGGHUqFFCW/view?usp=drive_link" target="_blank">Download Garment Genie .zip file</a>
-        </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 R. Yan. All Rights Reserved.</p>
+    </footer>
 
-        <div class="project">
-          <h3 style="font-family: 'Lexend'; font-size: 50px;">Rebeat</h3>
-          <p style="font-family: 'Jua'; font-size: 20px; margin-bottom: 187.5px;">A 2D combat-based game in which they don't forget you, Player. WIP -- WPF game launcher and other files + fixes log can be found at the link below.</p>
-          <div id="message" style="font-family: 'Jua'; font-size: 20px; margin-top: 10px;"></div>
-          <a href="https://rachelyan.itch.io/rebeat" target="_blank" onclick="showMessage(event);">View & Download Launcher & Project on Itch</a>
-        </div>
+    <script>
+        // Animate sections on scroll
+        const sections = document.querySelectorAll('section');
+        const options = {
+            threshold: 0.1
+        };
 
-      </div>
-    </div>
-  </section>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, options);
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2 style="font-family: 'Lexend';">Contact</h2>
-      <p style="font-family: 'Jua'; font-size: 20px;">Feel free to reach out to me via the following platforms:</p>
-      <ul>
-        <li><a href="mailto:yan.ra@northeastern.edu">Email</a></li>
-        <li><a href="https://github.com/y-ra" target="_blank">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/yan-ray" target="_blank">LinkedIn</a></li>
-      </ul>
-    </div>
-  </section>
+        sections.forEach(section => {
+            observer.observe(section);
+        });
 
-  <!-- Footer -->
-  <footer>
-    <p style="font-family: 'Lexend';">© 2024 R. Yan. All Rights Reserved.</p>
-  </footer>
+        // Toggle nav menu on mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
 
-
-  <script src="script.js"></script>
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show-nav');
+        });
+    </script>
 </body>
 </html>
